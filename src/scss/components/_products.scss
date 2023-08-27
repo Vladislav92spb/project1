@@ -1,0 +1,40 @@
+.products {
+  padding: 80px 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-top: 25px;
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    /* 125% */
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    margin-top: 16px;
+    color: #283136;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+  }
+
+  &__button {
+    margin-top: 32px;
+    width: 160px;
+    height: 50px;
+    &--green {
+      background-color: #00CA74;
+    }
+    &--yellow {
+      background-color: #EFC849;
+    }
+    
+  }
+}
