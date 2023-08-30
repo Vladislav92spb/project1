@@ -1,7 +1,8 @@
 .company {
   padding-top: 39px;
   padding-bottom: 73px;
-
+  border-top: 2px solid #EEEEEE;
+  border-bottom: 2px solid #EEEEEE;
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -81,5 +82,23 @@
       line-height: 18px;
       /* 112.5% */
     }
+  }
+
+  &__item {
+    position:relative;
+    padding-left: calc(25px + 7px + 5px);
+
+    
+  &::before {
+    content: '';
+    left: 0;
+    top: 50%;
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: #FB565A;
+    transform: translateY(-50%);
+
+  }
   }
 }
