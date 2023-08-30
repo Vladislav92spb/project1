@@ -1,35 +1,85 @@
 .company {
-  &__text {
+  padding-top: 39px;
+  padding-bottom: 73px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+   
+  
+  }
+
+  &__title {
+    margin-top: calc(73px - 39px);
+    margin-bottom: 32px;
     color: #000;
-font-family: Roboto;
-font-size: 45px;
-font-style: normal;
-font-weight: 500;
-line-height: 45px; /* 100% */
-&--subtitle {
-  color: #283136;
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 150% */
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 45px;
+    /* 100% */
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    color: #283136;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+  }
+
+  &__subtitle {
+    color: #283136;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+    text-transform: uppercase;
+  }
+
+  &__list {
+    margin-top: 23px;
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+
+    li {
+      color: #283136;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      /* 150% */
+    }
+
+  }
+&__img {
+  margin-bottom: 37px;
 }
-&--ul {
-  color: #283136;
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 24px; /* 150% */
-text-transform: uppercase;
-}
-&--li {
-  color: #283136;
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 150% */
-}
+  &__prosent {
+    margin-top: 31px;
+    display: flex;
+    gap: 22px;
+
+    li {
+      color: #000;
+      font-size: 45px;
+      font-weight: 700;
+      line-height: 64px;
+      /* 142.222% */
+    }
+  }
+
+  &__descr {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      color: #283136;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18px;
+      /* 112.5% */
+    }
   }
 }
