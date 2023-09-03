@@ -1,0 +1,52 @@
+.map {
+    width: 100%;
+    height: 416px;
+
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__block {
+        position: absolute;
+        bottom: 54px;
+        left: 0;
+        width: 319px;
+        height: 308px;
+        background-color: #fff;
+        padding: 49px 50px 47px;
+    }
+
+    &__h3 {
+        padding-bottom: 23px;
+    }
+
+    &__button {
+        margin-top: 37px;
+        width: 219px;
+
+    }
+
+    &__text {
+        color: #666;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+
+        a {
+            color: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }
+
+        /* 112.5% */
+    }
+}
