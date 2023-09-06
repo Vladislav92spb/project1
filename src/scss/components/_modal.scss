@@ -6,11 +6,11 @@
   width: 100%;
   height: 100%;
   background-color: rgba($color: #000, $alpha: 60%);
-  // display: none;
+  display: none;
 
-  //&--active {
-  // display: block;
-  //}
+  &--active {
+  display: block;
+  }
 
   // Сама форма относительно экрана
   &__wrapper {
@@ -53,18 +53,39 @@
       height: 50px;
     }
   }
+
   &__blockarea {
     background-color: rgb(183, 172, 172);
     margin-bottom: 25px;
-    
+
     textarea {
-      width: 720px;
+      width: 800px;
       height: 300px;
+      resize: none;
     }
-    
+
   }
- 
- 
+
+  &__imputform {
+    border-radius: 3px;
+    border: 2px solid #D7DCDE;
+    background: #FFF;
+
+    &:hover {
+      border-radius: 3px;
+      border: 2px solid #B4B9BB;
+      background: #FFF;
+    }
+
+    &:focus {
+      border-radius: 3px;
+      border: 2px solid #000;
+      background: #FFF;
+    }
+
+  }
+
+
 }
 
 
