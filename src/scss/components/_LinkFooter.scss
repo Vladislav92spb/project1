@@ -1,0 +1,46 @@
+.LinkFooter {
+    padding-top: 68px;
+    padding-bottom: 68px;
+&__link {
+    display: flex;
+    align-items: center;
+
+
+}
+&__item {
+    display: block;
+    width: 81px;
+height: 81px;
+flex-shrink: 0;
+background-color: #E1E1E1;
+margin-right: 5px;
+border-radius: 50%;
+transition: 300ms;
+&:hover {
+    background-color: #E74246;
+}
+&:active {
+    background-color: #D7373B;
+    box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.10) inset;
+}
+}
+
+&__vk {
+   margin: 33px 27px;
+    &:active {
+        opacity: 0.3;
+    }
+}
+&__f {
+    margin: 31px 34px 28px 35px;
+    &:active {
+        opacity: 0.3;
+    }
+}
+&__inst {
+    margin: 30px;
+    &:active {
+        opacity: 0.3;
+    }
+}
+}
