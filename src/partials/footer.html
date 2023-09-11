@@ -15,7 +15,6 @@
     </div>
   </div>
   </div>
-  <div class="container"></div>
   <!-- модальное окно -->
   <!-- для js закрыть открыть модальное окно -->
 
@@ -54,9 +53,7 @@
 
 
         </form>
-
       </div>
-
     </div>
 
   </div>
@@ -83,4 +80,54 @@
     </div>
     
   </div>
+  
+  
+</div>
+  
+
+<div class="order">
+  <!-- Обертка для формы wrapper -->
+  <div class="order__wrapper">
+    <!-- Шапка header в которой лежит заголовок и крестик -->
+    <div class="order__header">
+      
+      <h4 class="order__title">Форма заказа</h4>
+      <div class="order__cross">
+      </div>
+      
+    </div>
+    <!-- Тело самой формы в котором "ИМЯ(input)" "ЕМAIL(input)" "СООБЩЕНИЕ(textarea)"-->
+    <div class="order__body">
+      <form action="" class="order__form">
+        <div class="order__nameemail">
+          <div class="order__block">
+            <label for="imputname">ФИО:</label>
+            <input type="text" name="" id="imputname" class="modal__imputform" minlength="2" maxlength="40"
+              placeholder="ФИО">
+          </div>
+          <div class="order__block">
+            <label for="inputemail">Email:</label>
+            <input type="email" name="" id="inputemail" class="modal__imputform" minlength="2" maxlength="16"
+              placeholder="Ваш Email">
+          </div>
+          <div class="order__block">
+            <label for="inputtel">Тел:</label>
+            <input type="tel" name="" id="inputtel" class="modal__imputform" 
+              placeholder="Телефон">
+          </div>
+        </div>
+
+        <div class="order__blockarea">
+          <label for="textarea">Комментарий к заказу:</label>
+          <textarea name="textarea" id="textarea" placeholder="Введите сообщение" class="modal__imputform"></textarea>
+        </div>
+        <!-- Кнопка отправить -->
+        <button class="order__button btn">Отправить</button>
+
+
+      </form>
+    </div>
+  </div>
+
+</div>
 </footer>
