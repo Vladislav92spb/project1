@@ -1,0 +1,10 @@
+.filters {
+    &__radios {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &__title {
+        margin-bottom: 13px;
+    }
+}
