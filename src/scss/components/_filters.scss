@@ -4,7 +4,55 @@
         flex-direction: column;
         gap: 15px;
     }
+
     &__title {
+        margin-top: 62PX;
         margin-bottom: 13px;
+        color: #000;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+        /* 166.667% */
+        text-transform: uppercase;
+    }
+
+    &__addblock {
+        margin-top: 46PX;
+    }
+
+    &__addtitle {
+        color: #000;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+        /* 166.667% */
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+
+    &__checkboxes {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+    }
+
+    &__button {
+        margin-bottom: 1382px;
+        margin-top: 67px;
+        button {
+            border: none;
+            color: #000;
+            text-align: center;
+            font-size: 16px;
+            padding: 17px 89px 15px 88px;
+            width: 260px;
+            height: 50px;
+            border-radius: 3px;
+            border-bottom: none;
+            background: #EEE;
+            line-height: 18px;
+            font-weight: 500;
+        }
+
     }
 }
