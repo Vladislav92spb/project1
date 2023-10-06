@@ -1,7 +1,28 @@
 <section class="content">
     <div class="container">
         <div class="content__wrapper">
-            @include('filters.html')  
+            @include('filters.html')
+            <div class="content__body">
+                <div class="content__header">
+                    <h3 class="content__title">Сортировать:</h3>
+                    <ul class="content__list">
+                        <li class="content__item">
+                            По цене
+                        </li>
+                        <li class="content__item">
+                            По типу
+                        </li>
+                        <li class="content__item">
+                            По названию
+                        </li>
+                    </ul>
+                    <div class="content__buttons">
+                        <div class="content__button content__button--down"></div>
+                        <div class="content__button content__button--up"></div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>

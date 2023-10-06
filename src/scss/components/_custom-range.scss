@@ -1,0 +1,160 @@
+.custom-range {
+
+    &__wrapper {
+        padding-left: 22px;
+        position: relative;
+        width: 260px;
+        height: 80px;
+        border-radius: 3px;
+        background: #EEE;
+        margin-top: 30px;
+    }
+
+    input[type="range"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 205px;
+        outline: none;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        background-color: transparent;
+        pointer-events: none;
+    }
+
+    &__track {
+        width: 205px;
+        height: 2px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+
+    }
+
+    input[type="range"]::-webkit-slider-runnable-track {
+        -webkit-appearance: none;
+        height: 2px;
+    }
+
+    input[type="range"]::-moz-range-track {
+        -moz-appearance: none;
+        height: 2px;
+    }
+
+    input[type="range"]::-ms-track {
+        appearance: none;
+        height: 2px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        cursor: pointer;
+        margin-top: -9px;
+        pointer-events: auto;
+        border-radius: 50%;
+        filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.15));
+    }
+
+    input[type="range"]::-moz-range-thumb {
+        -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        cursor: pointer;
+        margin-top: -9px;
+        pointer-events: auto;
+        border-radius: 50%;
+        filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.15));
+        pointer-events: auto;
+    }
+
+    input[type="range"]::-ms-thumb {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        cursor: pointer;
+        margin-top: -9px;
+        pointer-events: auto;
+        border-radius: 50%;
+        filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.15));
+        pointer-events: auto;
+    }
+
+    input[type="range"]:active::-webkit-slider-thumb {
+        background-color: #FB565A;
+
+    }
+
+    &__values {
+        display: flex;
+        gap: 33px;
+        margin-top: 14px;
+    }
+
+    &__value {
+        display: flex;
+        gap: 11px;
+        align-items: center;
+
+        input {
+            width: 80px;
+            height: 38px;
+            border-radius: 3px;
+            background: #EEE;
+            color: #283136;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            /* 137.5% */
+            text-transform: uppercase;
+            border: none;
+            outline: none;
+            text-align: center;
+        }
+
+        label {
+            color: #283136;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            /* 137.5% */
+            text-transform: uppercase;
+        }
+    }
+
+
+
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+//Это для браузера Firefox:
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+
+//Для других
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
