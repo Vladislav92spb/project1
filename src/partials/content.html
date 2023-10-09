@@ -4,9 +4,10 @@
             @include('filters.html')
             <div class="content__body">
                 <div class="content__header">
+                    
                     <h3 class="content__title">Сортировать:</h3>
-                    <ul class="content__list">
-                        <li class="content__item">
+                    <ul class="content__list list-reset">
+                        <li class="content__item content__item--active">
                             По цене
                         </li>
                         <li class="content__item">
@@ -17,10 +18,12 @@
                         </li>
                     </ul>
                     <div class="content__buttons">
-                        <div class="content__button content__button--down"></div>
+                        <div class="content__button content__button--down content__button--active"></div>
                         <div class="content__button content__button--up"></div>
                     </div>
                 </div>
+                @include('cards.html')
+            
             </div>
 
         </div>

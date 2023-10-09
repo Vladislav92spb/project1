@@ -1,0 +1,74 @@
+.cards {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 41px;
+    row-gap: 30px;
+
+    
+
+    &__shape {
+        background-color: #fff;
+        width: 100%;
+        height: 40px;
+        background-image: url("data:image/svg+xml,%3Csvg width='360' height='40' viewBox='0 0 360 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z' fill='%234D4D4D' fill-opacity='0.11'/%3E%3C/svg%3E%0A");
+
+    }
+
+    &__img {
+        height: 578px;
+        width: 100%;
+    }
+
+    &__block {
+        opacity: 0;
+        position: absolute;
+        bottom: 5px;
+        width: 100%;
+        height: 231px;
+        background-color: #EEE;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        transition: opacity 300ms;
+    }
+
+    &__card {
+        position: relative;
+        border-radius: 3px;
+       &:hover .cards__block{
+        opacity: 1;
+       }
+    }
+
+    &__title {
+        margin-bottom: 12px;
+        color: #000;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+        /* 166.667% */
+        text-transform: uppercase;
+    }
+
+    &__descr {
+        max-width: 200px;
+        color: #666;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+
+
+        /* 112.5% */
+    }
+
+    &__button {
+        margin-top: 32px;
+        width: 200px;
+    }
+}
