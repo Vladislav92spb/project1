@@ -85,6 +85,7 @@
         height: 50px;
         border-radius: 3px;
         background: #EEE;
+        transition: background 300ms;
 
         &--active {
             border: 3px solid #DBDBDB;
@@ -118,6 +119,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: opacity 300ms;
 
         /* 112.5% */
         &:active {
@@ -132,6 +134,7 @@
         height: 50px;
         border-radius: 3px;
         background: #EEE;
+        transition: background 300ms;
 
         &:hover {
             background: #DFDFDF;
@@ -158,6 +161,7 @@
         line-height: 18px;
         /* 112.5% */
         text-transform: uppercase;
+        transition: opacity 300ms;
 
         &:active {
             opacity: 0.3;
