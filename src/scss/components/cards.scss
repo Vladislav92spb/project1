@@ -134,7 +134,7 @@
         height: 50px;
         border-radius: 3px;
         background: #EEE;
-        transition: background 300ms;
+        transition: background 300ms; // лучше background-color
 
         &:hover {
             background: #DFDFDF;
